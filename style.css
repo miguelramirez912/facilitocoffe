@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+}
+h1,h2,h3,h4,h5{
+    font-family: "Fjalla one", sans-serif;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.75rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.nav-logo{
+    font-size: 1.25rem;
+    color: black;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav-link{
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: #0d6efd;
+    display: block;
+}
+.cover{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+.cover p{
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+.cover button{
+    background-color: #0d6efd;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font: inherit;
+    padding: .35rem .7rem;
+    color: white;
+}
+/*main tarjetas*/
+.container{
+    margin: 3rem auto;
+    max-width: 90%;
+    padding: 0 .5rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 330px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin: .3rem .5rem;
+}
+.card-cover{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.card-body{
+    padding: 1rem;
+}
+.card-body h3{
+    font-size: 1.25rem;
+    min-height: 3rem;
+}
+/*main formulario*/
+.slogan{
+    display: flex;
+    flex-wrap: wrap;
+}
+.slogan-img, .slogan-txt {
+    width: 50%;
+    padding: 0 .5rem;
+}
+.slogan-img img{
+    width: 100%;
+}
+.slogan-txt h4{
+    font-size: 1.7rem;
+}
+.slogan-txt p{
+    margin-top: 0;
+}
+.form_email{
+    display: flex;
+}
+.input-adjust{
+    flex: 1 1 auto;
+}
+.email-input, .email-button{
+    border-radius: .25rem;
+    font: inherit;
+    padding: .375rem .7rem;
+}
+.email-input{
+    border: 1px solid #ced4da;
+    width: 99%;
+}
+.email-button{
+    border: 1px solid transparent;
+    background-color: #0d6efd;
+    color: white;
+}
+/*main productos*/
+.menu{
+    display: flex;
+    overflow: scroll;
+}
+.product{
+    width: 300px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: .5rem;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+.product-cover{
+    height: 200px;
+    border-radius: .5rem .5rem 0 0;
+}
+.product-body{
+    padding: 1rem;
+}
+.product-body h3{
+    font-size: 1.25rem;
+    min-height: 3rem;
+}
+.product-body span{
+    background-color: green;
+    color: white;
+}
+/*main mapa*/
+.responsive-map{
+    position: relative;
+    padding-top: 56.25%;
+}
+.responsive-map iframe{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/*acerca de header*/
+.cover2{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 3rem;
+}
+.cover2 h1{
+    font-size: 2.25rem;
+}
+.cover2 p{
+    margin-top: 0;
+}
+
+.bartender img{
+    height: 250px;
+    float: left;
+    margin-right: 1rem;
+}
+.bartender p{
+    text-align: justify;
+}
+/*acerca de body presentacion*/
+.stripe-container{
+    overflow: hidden;
+}
+.stripe{
+    display: flex;
+    transform: translateX(0);
+    animation: slider 20s infinite;
+}
+.image-container{
+    width: 100%;
+    padding-top: 56.2%;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+}
+/*acercade team*/
+.team-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.team{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+.team-photo{
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.team h1{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+.team span{
+    background-color: #0d6efd;
+    color: white;
+    width: 100%;
+    border-radius: .25rem;
+    text-align: center;
+    font-size: .75em;
+    font-weight: 700;
+}
+@keyframes slider {
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+/*Un espacio para que se vea la imagen y uno mas pequeño para la transicion*/
+@media (max-width: 800px) {
+    .card{
+        width: 45%;
+    }
+   
+}
+@media (max-width: 450px) {
+    .card{
+        width: 100%;
+    } 
+    .slogan-img, .slogan-txt {
+        width: 100%;
+        padding: .3rem .5rem;
+    }   
+    .bartender img{
+       width: 100%;
+       height: auto;
+       margin-bottom: .5rem;
+    }
+
+}    

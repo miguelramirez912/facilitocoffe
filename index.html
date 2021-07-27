@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https=://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap">
+    <title>Practica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+       <nav class="nav">
+           <a href="" class="nav-logo">Logo</a>
+           <ul class="nav-list">
+               <li><a href="/" class="nav-link">Inicio</a></li>
+               <li><a href="#mapa" class="nav-link">Ubicación</a></li>
+               <li><a href="#menu" class="nav-link">Menú</a></li>
+               <li><a href="acercade.html" class="nav-link">Acerca de</a></li>
+           </ul>
+       </nav>
+       <div class="cover" style="background-image: url(img/img-lg-2.jpg);">
+           <h1>FacilitoCoffe</h1>
+           <p>El mejor café de la ciudad.</p>
+           <button type="submit">Conoce más</button>
+       </div>
+   </header>
+   <main>
+       <section>
+           <div class="container">
+               <div class="card-container">
+                <div class="card">
+                    <div class="card-cover" style="background-image: url(img/img-md-3.jpg);"></div>
+                    <div class="card-body">
+                        <h3>Mi tarjeta numero uno. Texto adicional</h3>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="card-cover" style="background-image: url(img/img-md-2.jpg);"></div>
+                     <div class="card-body">
+                         <h3>Mi tarjeta numero dos.</h3>
+                         <p>Some quick example text to build on the card title and make up the bulk of the card's content. Probar propiedades de alineación.</p>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-cover" style="background-image: url(img/img-md-1.jpg);"></div>
+                     <div class="card-body">
+                         <h3>Mi tarjeta numero tres.</h3>
+                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     </div>
+                 </div>
+               </div>
+           </div>
+       </section>
+       <section>
+           <div class="container">
+               <div class="slogan">
+                   <div class="slogan-img"><img src="img/svg_undraw_Travelers_re_y25a.svg" alt=""></div>
+                   <div class="slogan-txt">
+                       <h4>¡Inicia tu dia con una taza de café!</h4>
+                       <p>Ordena tu bolsa de café a domicilio o busca tu FacilitoCoffe más cercano.</p>
+                       <a href="#">Ir al mapa.</a>
+                   </div>
+               </div>
+               <form action="">
+                   <label for="email">Correo electrónico</label>
+                   <div class="form_email">
+                        <div class="input-adjust">
+                            <input class="email-input" type="email" id="email">
+                        </div>
+                        <button class="email-button" type="submit">Enviar</button>
+                   </div>
+               </form>
+           </div>
+       </section>
+       <section>
+           <div id="menu" class="container">
+               <div class="menu">
+                <div class="product">
+                    <div class="product-cover" style="background-image: url(img/rsz_edgar-castrejon-1spu0kt-ejg-unsplash.jpg);" title="Ensalada"></div>
+                    <div class="product-body">
+                        <h3>Ensalada</h3>
+                        <span>$2USD</span>
+                    </div>
+                </div>
+                <div class="product">
+                     <div class="product-cover" style="background-image: url(img/aneta-voborilova-PPVtidDYgvk-unsplash.jpg);" title="Pastel"></div>
+                     <div class="product-body">
+                         <h3>Pastel</h3>
+                         <span>$3USD</span>
+                     </div>
+                 </div>
+                 <div class="product">
+                     <div class="product-cover" style="background-image: url(img/patrick-jansen-Z2c9bFpMBTg-unsplash.jpg);" title="Bebida alcoholica"></div>
+                     <div class="product-body">
+                         <h3>Bebida alcoholica</h3>
+                         <span>$3USD</span>
+                     </div>
+                 </div>
+                 <div class="product">
+                     <div class="product-cover" style="background-image: url(img/aneta-voborilova-aFqKIFZ-Idg-unsplash.jpg);" title="Panque"></div>
+                     <div class="product-body">
+                         <h3>Panque</h3>
+                         <span>$1USD</span>
+                     </div>
+                 </div>
+                 <div class="product">
+                     <div class="product-cover" style="background-image: url(img/crystalweed-cannabis-mGXqbAujPG4-unsplash.jpg);" title="Té de Limón"></div>
+                     <div class="product-body">
+                         <h3>Té de Limón</h3>
+                         <span>$1USD</span>
+                     </div>
+                 </div>
+               </div>
+           </div>
+       </section>
+       <section>
+           <div id="mapa" class="container">
+               <h2>Aqui nos vemos.</h2>
+               <p>Calz. de Tlalpan 3465, Sta. Úrsula Coapa, Coyoacán, 04650 Ciudad de México, CDMX</p>
+               <div class="responsive-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15062.113928725941!2d-99.1505277!3d19.3028607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9761ee695190b694!2sEstadio%20Azteca!5e0!3m2!1ses!2smx!4v1621300093295!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+           </div>
+       </section>
+   </main>
+</body>
+</html>
